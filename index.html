@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Copy Addresses</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      padding: 20px;
+    }
+    .snippet {
+      background: #fff;
+      border: 1px solid #ccc;
+      padding: 10px 15px;
+      margin-bottom: 10px;
+      border-radius: 6px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    .address {
+      font-family: monospace;
+      font-size: 14px;
+      overflow-wrap: break-word;
+    }
+    .copy-btn {
+      padding: 5px 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .copy-btn:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="snippet">
+    <span class="address">nibi1ql8cf537d4pnl5w0djjn49v66h8smd0df59kz4</span>
+    <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+  </div>
+
+  <div class="snippet">
+    <span class="address">nibi1ahhduan7kcte0w88385pt35zlqxe2q7cdup92g</span>
+    <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+  </div>
+
+  <div class="snippet">
+    <span class="address">nibi1305razfah9gcaxsxpvqy5vtcpswm3pyws37s4h</span>
+    <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+  </div>
+
+  <div class="snippet">
+    <span class="address">nibi1arhkkkygt0mgek77qyp9lmcrk8c9htjh462093</span>
+    <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+  </div>
+
+  <div class="snippet">
+    <span class="address">nibi1dhhruzy0l4qlqyz4785sv4xrte7zgya7r537x7</span>
+    <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+  </div>
+
+  <div class="snippet">
+    <span class="address">nibi1u76pk77espd9nzfs7avlx7hg5dc9uzpztdhtl4</span>
+    <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+  </div>
+
+  <div class="snippet">
+    <span class="address">nibi1jgw6p60psdnj6xpf4lwr20l0n3dwmce55z838x</span>
+    <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+  </div>
+
+  <div class="snippet">
+    <span class="address">nibi1cxcw9c3fs07flr5gy0z6d2sgna0phhf8xggkjt</span>
+    <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+  </div>
+
+  <div class="snippet">
+    <span class="address">nibi1lhuhsz6ftzw4dxt97pwqp205mqq8tu525yn04r</span>
+    <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+  </div>
+
+  <div class="snippet">
+    <span class="address">nibi1ptadfa90l3q4amc2nct77a550fdj766evk87kw</span>
+    <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+  </div>
+
+  <div class="snippet">
+    <span class="address">nibi1y3tlsjpekfx8jej7l8qt57z8wr5ysy0r7u26ut</span>
+    <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+  </div>
+
+  <div class="snippet">
+    <span class="address">nibi1k8e7unszxwfdh4ya53p879ctyw8jhfd3v4arv3</span>
+    <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+  </div>
+
+  <div class="snippet">
+    <span class="address">nibi19jpwe3vyvfyzkvxmu7us467sp5tqv42vp8adrl</span>
+    <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+  </div>
+
+  <div class="snippet">
+    <span class="address">nibi1586jatvwf3tdxz8mpnqxpuwm2rrmvecvv054fc</span>
+    <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+  </div>
+
+  <div class="snippet">
+    <span class="address">nibi15warhug0p3cxqvq2p74ychdsds3kfpa5ganpye</span>
+    <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+  </div>
+
+  <script>
+    function copyToClipboard(btn) {
+      const address = btn.previousElementSibling.textContent;
+      navigator.clipboard.writeText(address).then(() => {
+        btn.textContent = 'Copied!';
+        setTimeout(() => btn.textContent = 'Copy', 1500);
+      });
+    }
+  </script>
+</body>
+</html>
